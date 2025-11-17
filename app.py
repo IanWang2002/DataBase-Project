@@ -7,6 +7,7 @@ import mysql_utils
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
 app.title = "Academic World Dashboard"
+server = app.server   # 👈 ADD THIS LINE
 
 # Header Section
 header = html.Div(
@@ -46,6 +47,6 @@ widget4.register_callbacks(app)
 widget5.register_callbacks(app)
 widget6.register_callbacks(app)
 
-# 🚀 Launch App
+# 🚀 Launch App (only for local debugging)
 if __name__ == "__main__":
     app.run(debug=True)
