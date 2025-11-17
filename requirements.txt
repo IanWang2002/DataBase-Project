@@ -6,3 +6,4 @@ mysql-connector-python
 pymongo
 neo4j
 gunicorn
+pymysql
