@@ -25,12 +25,17 @@ def layout():
             line=dict(color="rgba(255, 193, 7, 0.4)", width=2),
             opacity=0.6
         )
-        
+
+        # Replace invalid 'star' with a custom path-based star
         figure.add_shape(
-            type="star",
-            x0=-0.1, y0=-0.1, x1=0.1, y1=0.1,
+            type="path",
+            path="M 0 -1 L 0.2245 -0.309 L 0.9511 -0.309 "
+                 "L 0.3633 0.118 L 0.5878 0.809 L 0 -0.382 "
+                 "L -0.5878 0.809 L -0.3633 0.118 L -0.9511 -0.309 "
+                 "L -0.2245 -0.309 Z",
             fillcolor="rgba(255, 193, 7, 0.3)",
-            line=dict(color="rgba(255, 193, 7, 0.8)", width=1)
+            line=dict(color="rgba(255, 193, 7, 0.8)", width=1),
+            xref="paper", yref="paper"
         )
         
         figure.update_layout(
