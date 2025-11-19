@@ -1,5 +1,14 @@
 # 📚 Academic World Dashboard
+---
+### Demo Mode (⚠️No Dataset Loaded)
 
+The live demo below runs **without the Academic World dataset** because the dataset 
+cannot be uploaded or publicly hosted (MySQL / MongoDB / Neo4j).
+
+The Render deployment shows the **UI only**.  
+For full functionality, please run the project locally with your own copy of the dataset.
+
+🔗 **Live Demo:** https://academic-dashboard-bi8h.onrender.com/
 ## Overview
 
 This application is an interactive web dashboard for exploring, querying, and updating the **Academic World** dataset. It seamlessly integrates **MySQL**, **MongoDB**, and **Neo4j** as backend databases, allowing users to discover key researchers, publications, and collaborations across universities.
