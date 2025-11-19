@@ -1,6 +1,6 @@
 # 📚 Academic World Dashboard
 ---
-### Demo Mode (No Dataset Loaded)
+### ⚠️ Demo Mode (No Dataset Loaded)
 
 The live demo below runs **without the Academic World dataset** because the dataset 
 cannot be uploaded or publicly hosted (MySQL / MongoDB / Neo4j).
