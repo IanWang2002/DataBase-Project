@@ -147,7 +147,16 @@ def register_callbacks(app):
     def show_faculty_spotlight(n):
         fac = get_random_faculty()
         if not fac:
-            return html.Div("No faculty data found.", style={"color": "#f59e0b"})
+            return html.Div(
+                "No faculty data found.",
+                style={
+                    "color": "#000000",
+                    "backgroundColor": "#e5e7eb",
+                    "padding": "10px 15px",
+                    "borderRadius": "6px",
+                    "fontWeight": "bold"
+                }
+            )
         return make_faculty_card(fac)
 
     @app.callback(
